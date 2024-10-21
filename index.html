@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Criar uma página web utilizando as tags aprendidas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        #main {
+            background-color: #502000;
+            opacity: 1;
+            display: block;
+        }
+        body {
+            padding: 10%;
+            padding-top: 0%;
+            margin-top: 0;
+            padding-bottom: 0%;
+            margin-bottom: 0%;
+            background-color:  #fff3af;
+        }
+        a {
+            text-decoration: none;
+            color: brown;
+        }
+        a:visited {
+            color: rgb(146, 82, 8);
+            text-shadow: 1px 1px black;
+            text-decoration: line-through;
+        }
+        a:hover {
+            color: rgb(182, 149, 78);
+            text-overflow: initial;
+            text-size-adjust: 0.5%;
+            text-shadow: 1px 1px lightcoral;
+        }
+        p {
+            padding: 15px;
+            font-size: 30px;
+        }
+        h1 {
+            color: rgb(172, 103, 38);
+        }
+        h2 {
+            color: #fff3af;
+        }
+        h3 {
+            color: #c46a2f;
+        }
+        div {
+            font-family: 'Franklin Gothic Medium';
+            align-self: end;
+            color: rgb(141, 117, 103);
+            padding: 15px;
+            border-radius: 5px;
+            height: max-content;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        div.show {
+            display: block;
+            opacity: 1;
+        }
+        div.hide {
+            display: none;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+    <h1>Desafio HTML - DIO / Diogo</h1>
+    <hr color="orange"/>
+    <h2>Aulas</h2>
+    <ol style="font-family: verdana;">
+        <a href="#" onclick="showText('ferramentas')"><li>Ferramentas Utilizadas</li></a>
+        <a href="#" onclick="showText('inspencionar')"><li>Inspetor de Elementos</li></a>
+        <a href="#" onclick="showText('html')"><li>Estrutura Básica do <abbr title="HyperText Markup Language">HTML</abbr></li></a>
+        <a href="#" onclick="showText('tags')"><li>Falando de Tags</li></a>
+        <a href="#" onclick="showText('tags_a')"><li>Atributos das Tags</li></a>
+        <a href="#" onclick="showText('textos')"><li>Textos</li></a>
+        <a href="#" onclick="showText('listas')"><li>Listas Ordenadas e Não Ordenadas</li></a>
+        <a href="#" onclick="showText('links')"><li>Links</li></a>
+        <a href="#" onclick="showText('ref')"><li>Referências</li></a>
+    </ol>
+
+    <div id="ferramentas" class="hide">
+        <h3>Ferramentas Utilizadas</h3>
+        <p>Nessa aula foi apresentado o Visual Studio Code a ferrementa que será usada no desenvolvimento, o <abbr title="Visual Studio">VS</abbr>Code, explicou como funciona a area de trabalho do VSCode e ensinou a instalar e utilizar plugins, com o LiveServer que ajuda bastante no desenvolvimento.</p>
+    </div>
+    <div id="inspencionar" class="hide">
+        <h3>Inspetor de Elementos</h3>
+        <p>Nessa aula foi apresentado o Inspetor de Elementos que é aberto ao apertar a tecla "F12" ou "Ctrl+Shift+i", e expliocou o funcionamento da ferramenta.</p>
+    </div>
+    <div id="html" class="hide">
+        <h3>Estrutura Básica do <abbr title="HyperText Markup Language">HTML</abbr></h3>
+        <p>Nessa aula foi explicado a estrutura básica do HTML, Explicou que o conteúdo do "body" é o que será exibido e "head" o que é carregado antes de exibir a página.</p>
+    </div>
+    <div id="tags" class="hide">
+        <h3>Falando de Tags</h3>
+        <p>Nessa aula foi explicado o funcionamento das tags, apresentou tags com "i" que transforma o conteúdo entre a tag em italico, entre "strong" transforma em negrito, e finalizou explicou as tags que são fechadas no final da tag antes da chave final.</p>
+    </div>
+    <div id="tags_a" class="hide">
+        <h3>Atributos das Tags</h3>
+        <p>Nessa aula foi explicado que atributos são propriedades das tags, explicou que existem atributos que todas as tags vão ter como: id, nome, style e class. Eplicou atributos específicos como: number e color, explicou como usar a tag "img" e como manipular os atributos da imagem.</p>
+    </div>
+    <div id="textos" class="hide">
+        <h3>Textos</h3>
+        <p>Nessa aula foi apresentado as tags usadas na tipografia, explicou os h's e o uso do "p" como parágrafo, explicou que o prórpio navegador define a margem automáticamente através das tags mas também pode ser defido por css, explicou como fazer um citação usando a tag "blockquote" ou "q", explicou como sublinhar e marcar o texto usando as tags "u" e "mark" e finalizou explicando a tag "sup" e sua utilização.</p>
+    </div>
+    <div id="listas" class="hide">
+        <h3>Listas Ordenadas e Não Ordenadas</h3>
+        <p>Nessa aula foi explicado as listas ordenadas e não ordenadas "ol" e "ul" respectivamente, explicou que cada item listado deve estar dentro da tag filha "li" para o seu devivo funcionamento e finalizou explicando o a diferença entre a lista ordenada e a lista não ordenada.</p>
+    </div>
+    <div id="links" class="hide">
+        <h3>Links</h3>
+        <p>Nessa aula foi explicado o funcionamento dos links usando a tag "a" para ancorar a algum endereço, explicou que o endereço vai dentro do recurso "href", explicou o recurso "target" e como funcionam os atributos "_blank" que abre em uma nova aba e o "_self" que abre na própria janela,explicou o recurso "title" que exibe um texto quando o mouse fica sobre o link, e finalizou explicando como fazer a ancoragem dentro do próprio site.</p>
+    </div>
+    <div id="ref" class="hide">
+        <h3>Referências</h3>
+        <p><font size="3" color="#FFFFFF" family="verdana">
+            <ul>
+                <li>PALACIOS, Ermogenes. <a href="https://github.com/ermogenes/aulas-programacao-web/blob/291ef22fb4301268f9fc58b622726be720205738/content/hello-world-gh-pages.md" target="_blank" style="color:#ffcf76; font-size: 15px;"><u>Programação de Computadores com tecnologias Web</u></a>. <i>Meu primeiro site. Ago 14, 2020</i></li>
+                
+            </ul>
+        </font></p>
+    </div>
+
+
+</div>
+    <script>
+        function showText(aulaId) {
+            var texts = document.querySelectorAll('div');
+            texts.forEach(function(text) {
+                text.classList.add('hide');
+                text.classList.remove('show');
+            });
+            var text = document.getElementById(aulaId);
+            text.classList.add('show');
+            text.classList.remove('hide');
+        }
+    </script>
+</body>
+</html>
